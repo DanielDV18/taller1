@@ -44,9 +44,9 @@ window.alert("Verifique su usuario")
 else window.alert("Verifique sus credenciales")*/
 
 //Condicional multiple
-let num2=prompt("Digite un numero");
+/*let num2=prompt("Digite un numero");
 let num3=prompt("Digite otro numero");
-let operacion=prompt("Digite 1 para suma, 2 para resta, 3 para multiplicaicon y 4 para division");
+let operacion=prompt("Digite 1 para suma, 2 para resta, 3 para multiplicaicon, 4 para division, 5 para raiz cuadrada y para potencia 6");
 
 switch (operacion) {
         case "1":
@@ -61,7 +61,19 @@ switch (operacion) {
         case "4":
         alert("La multiplicación de los números ingresados es: " + parseInt(num2) / parseInt(num3));
         break;    
+        case "5":
+        alert("La raiz cuadrada de los números ingresados es:  ", Math.sqrt(num2,num3) );
+        break; 
+        case "6":
+        alert(`El resultado es${num2}^${num3} ${Math.pow(num2,num3).toFixed(2)}`);
+            break;
         default:
         alert("Error");
         break;
+
+        
+
+
 }
+*/
+
