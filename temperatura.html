@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    
+</head>
+<body>
+    <div class="container">
+        <form class="form-ejercicios">
+            <div class="group-form">
+                <h1>CALCULADORA</h1>
+                <label for="num1" class="form-label">Ingresa una temperatura (grados)</label>
+                <input type="number" class="form-control" id="num1">
+            </div>
+            <br>
+            <div class="group-form">
+                <label>Vas a convertir de</label>
+                <select class="form-select" id="conv1">
+                    <option selected>Seleccione un grado</option>
+                    <option value="1">Fahrenheit</option>
+                    <option value="2">Celsius</option>
+                    <option value="3">Kelvin</option>
+                </select>
+            </div><br>
+            <div class="group-form">
+                <label>Deseas convertir a</label>
+                <select class="form-select" id="conv2">
+                    <option selected>Seleccione un
+                        <br> grado</option>
+                    <option value="1">Fahrenheit</option>
+                    <option value="2">Celsius</option>
+                    <option value="3">Kelvin</option>
+                </select>
+            </div><br>
+        <div class="boton">
+        <button type="submit" class="btn btn-primary" onclick="calcularg()">Calcular</button>
+        </form>
+        </div>
+</body>
+<script src="js/temp.js"></script>
+</html>
