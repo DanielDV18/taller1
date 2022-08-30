@@ -1,2 +1,0 @@
-# taller1
-EJERCICIOS DE JS Y TALLER 1
