@@ -27,55 +27,61 @@
 
     </div>
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="img/triangulo.png" class="card-img-top" width="300px" height="350px">
-              <div class="card-body">
+      <div class="modal-container">
+        <div class="card">
+              <img src="img/triangulo.png" class="card-img-top" height="550px">
+          <div class="card-body">
                 <h5 class="card-title">Triangulo</h5>
-                <div class="boton">
-                <button type="submit" class="btn btn-danger" id="peri">Perimetro</button>
-                <button type="submit" class="btn btn-danger" id="are">Area</button>
-            </div>
-              </div>
-            </div>
+            <div class="boton">
+                <!---BOTON PERIMETRO TRIANGULO-->
+              <div class="bot"><button type="submit" class="btn btn-danger" id="abrirModal">PERIMETRO</button></div>
+                <!--VENTANA MODAL-->
+                <div id="ventanaModal" class="modal">
+                  <div class="contenidoModal">
+                      <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>PERIMETRO TRIANGULO</h2>
+                      <label for="la1" class="form-label">Ingresa el primer lado del triangulo</label>
+                      <input type="text" class="form-control" id="la1">
+
+                      <label for="la2" class="form-label">Ingresa el segundo lado del triangulo</label>
+                      <input type="text" class="form-control" id="la2">
+
+                      <label for="la3" class="form-label">Ingresa el tercer lado del triangulo</label>
+                      <input type="text" class="form-control" id="la3">
+                      <br>
+                      <center><button type="submit" class="btn btn-danger" onclick="calcular()" id="abrirModal">Calcular</button></center>
+                  </div>
+                </div>
+
+
+
+
+                <!---BOTON AREA TRIANGULO-->
+            <div class="bot"><button type="submit" class="btn btn-danger" id="abrirModalArea">AREA</button></div>
+                <!--VENTANA MODAL-->
+      <div id="ventanaModalArea" class="modal">
+          <div class="contenidoModalArea">
+            <span class="cerrarModalArea"><i class="fa-solid fa-xmark"></i></span>
+            <h2>PERIMETRO</h2>
+            <label for="altura" class="form-label">Ingresa la altura del triangulo</label>
+            <input type="text" class="form-control" id="altura">
+
+            <label for="base" class="form-label">Ingresa la base del triangulo</label>
+            <input type="text" class="form-control" id="base">
+            <br>
+            <center><button type="submit" class="btn btn-danger" onclick="calcularA()" id="abrirModal">Calcular</button></center>
           </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/circulo.png" class="card-img-top" width="300px" height="350px"> 
-              <div class="card-body">
-                <h5 class="card-title">Circulo</h5>
-                <div class="boton">
-                <button type="submit" class="btn btn-danger" id="peri">Perimetro</button>
-                <button type="submit" class="btn btn-danger" id="are">Area</button>
-            </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/cuadrado.png" class="card-img-top" width="300px"  height="350px">
-              <div class="card-body">
-                <h5 class="card-title">Cuadrado</h5>
-                <div class="boton">
-                <button type="submit" class="btn btn-danger" id="peri">Perimetro</button>
-                <button type="submit" class="btn btn-danger" id="are">Area</button>
-            </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/rectangulo.png" class="card-img-top" width="300px"  height="350px">
-              <div class="card-body">
-                <h5 class="card-title">Rectangulo</h5>
-                <div class="boton">
-                <button type="submit" class="btn btn-danger" id="peri">Perimetro</button>
-                <button type="submit" class="btn btn-danger" id="are">Area</button>
-            </div>
+      </div>
+
               </div>
             </div>
           </div>
         </div>
+    </div>
+
+    <!---CRICULO-->
+
 </body>
+      <script src="js/tricua.js"></script>
+
 </html>

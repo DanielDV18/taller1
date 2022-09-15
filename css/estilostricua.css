@@ -1,8 +1,5 @@
-body{
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(189, 177, 165);
-
-
 }
 h1{
     text-align: center;
@@ -51,7 +48,81 @@ h5{
     display: none;
 
   }
-  .card{
+  .bot{
     text-align: center;
-    padding: 2rem;
+    padding: 0.1em;
   }
+  .container .modal-container .card .card-img-top{
+    width: 700px;
+    margin-left: 300px;
+  }
+  .modal{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    display: none;
+    padding: 0.5rem;
+   
+}
+
+.contenidoModal{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+}
+.contenidoModalArea{
+  background-color: #FFFFFF;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  padding: 1rem;
+  animation-name: animarmodal;
+  animation-duration: 0.5s;
+}
+
+@keyframes animarmodal {
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.cerrarModal{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModal:hover{
+    cursor: pointer;
+}
+.cerrarModalArea{
+  font-size: 2rem;
+  float: right;  
+}
+
+.cerrarModalArea:hover{
+  cursor: pointer;
+}
+
+.contenidoModal h2{
+    background-color: blue;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+}
+
+.contenidoModalArea h2{
+  background-color: blue;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: center;
+  clear: both;
+}
+  
