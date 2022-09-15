@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/validacion.css">
+    <script src="https://kit.fontawesome.com/ce8c3d092d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registro de usuario</h1>
+        <form id="frm-usuario" action="" method="post">
+            <div class="form-group" id="g-tipodoc">
+                <label for="tipodoc">Tipo de documento</label>
+                <div class="form-group-input">
+                    <select name="tipodoc" id="tipodoc" class="frm-input">
+                        <option value="0">Seleccione su tipo de documento </option>
+                        <option value="0">Cedula de Ciudadania </option>
+                        <option value="0">Cedula de Extranjeria </option>
+                    </select>
+                    <span class="msn-error">Seleccione su tipo de documento</span>
+                </div>
+            </div>
+            <div class="form-group" id="g-numdoc">
+                <label for="numdoc">Numero de Documento</label>
+                <div class="form-group-input">
+                    <input type="text" name="numdoc" id="numdoc" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar numeros, min 7 - max 10</span>
+                </div>
+            </div>
+<!--NOMBRE-->
+            <div class="form-group" id="g-nombre">
+                <label for="nombre">Nombre</label>
+                <div class="form-group-input">
+                    <input type="text" name="nombre" id="nombre" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar letras para el nombre</span>
+                </div>
+            </div>
+<!--APELLIDO-->
+            <div class="form-group" id="g-apellido">
+                <label for="apellido">Apellido</label>
+                <div class="form-group-input">
+                    <input type="text" name="apellido" id="apellido" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">Solo se puede ingresar letras para el apellido</span>
+                </div>
+            </div>
+<!--CORREO-->
+            <div class="form-group" id="g-correo">
+                <label for="correo">Correo</label>
+                <div class="form-group-input">
+                    <input type="text" name="correo" id="correo" class="frm-input">
+                    <i class="fa-solid fa-circle-check frm-icono"></i>
+                    <span class="msn-error">El formato de correo debe ser Ej: usuario@usuario.com</span>
+                </div>
+            </div>
+<!--TELEFONO-->
+<div class="form-group" id="g-telefono">
+    <label for="telefono">Telefono</label>
+    <div class="form-group-input">
+        <input type="text" name="telefono" id="telefono" class="frm-input">
+        <i class="fa-solid fa-circle-check frm-icono"></i>
+        <span class="msn-error">Solo se puede ingresar un minimo de 11 numeros</span>
+    </div>
+</div>
+<!--PASSWORD-->
+<div class="form-group" id="g-password">
+    <label for="password">Contraseña</label>
+    <div class="form-group-input">
+        <input type="password" name="password" id="password" class="frm-input">
+        <i class="fa-solid fa-circle-check frm-icono"></i>
+        <span class="msn-error">Su constraseña debe tener minimo 1 mayuscula, 1 minuscula, 1 numero y 1 caracter especial</span>
+    </div>
+</div>
+
+<!--REPETIR PASSWORD-->
+<div class="form-group" id="g-password">
+    <label for="password">Confirmar Contraseña</label>
+    <div class="form-group-input">
+        <input type="password" name="password" id="password" class="frm-input">
+        <i class="fa-solid fa-circle-check frm-icono"></i>
+        <span class="msn-error">La confirmacion de contraseña no coincide</span>
+    </div>
+</div>
+<!--CHECKBOX-->
+<div class="form-group" id="g-terminos">
+    <div class="form-group-input">
+        <input type="checkbox" name="terminos" id="terminos" class="frm-checkbox">
+        <label>Aceptar Terminos de Uso</label>
+    </div>
+</div>
+
+<button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="js/Validacion.js"></script>
+</html>
