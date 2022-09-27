@@ -48,81 +48,70 @@ h5{
     display: none;
 
   }
-  .bot{
-    text-align: center;
-    padding: 0.1em;
-  }
-  .container .modal-container .card .card-img-top{
-    width: 700px;
-    margin-left: 300px;
-  }
-  .modal{
-    background-color: rgba(0,0,0,0.7);
+  .modaltri{
+    background-color: rgba(0, 0,0, 0.5);
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     overflow: auto;
-    padding-top: 200px;
+    padding-top: 5%;
     display: none;
-    padding: 0.5rem;
-   
 }
 
-.contenidoModal{
-    background-color: #FFFFFF;
-    width: 60%;
+.contenidotri{
+  border-radius: 10px;
+  text-align: center;
+    background-color: white;
     margin: auto;
+    width: 50%;
+    height: 40%;
     position: relative;
     padding: 1rem;
     animation-name: animarmodal;
     animation-duration: 0.5s;
 }
-.contenidoModalArea{
-  background-color: #FFFFFF;
-  width: 60%;
-  margin: auto;
-  position: relative;
-  padding: 1rem;
-  animation-name: animarmodal;
-  animation-duration: 0.5s;
-}
-
 @keyframes animarmodal {
-    from {top: -300px; opacity: 0;}
+    from{top: -300px; opacity: 0;}
     to{top: 0; opacity: 1;}
 }
-.cerrarModal{
+
+.cerrarModaltri{
     font-size: 2rem;
-    float: right;  
+    float: right;
 }
 
-.cerrarModal:hover{
+.cerrarModaltri:hover{
     cursor: pointer;
 }
-.cerrarModalArea{
-  font-size: 2rem;
-  float: right;  
-}
 
-.cerrarModalArea:hover{
-  cursor: pointer;
-}
-
-.contenidoModal h2{
-    background-color: blue;
-    color: #FFFFFF;
-    padding: 1rem 0;
+form h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
     text-align: center;
-    clear: both;
+    color: rgb(2, 10, 255);
 }
 
-.contenidoModalArea h2{
-  background-color: blue;
-  color: #FFFFFF;
-  padding: 1rem 0;
-  text-align: center;
-  clear: both;
+form label {
+    color: black;
 }
-  
+
+form input:hover {
+    color: blue;
+}
+
+.boton:hover{
+   background-color: rgb(74, 67, 169);
+}
+
+.boton{
+  border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+}
+.card-body{
+  text-align: center;
+  background-color:  #b9b9cb;
+}
